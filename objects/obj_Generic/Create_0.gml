@@ -24,7 +24,8 @@ enum Object_State { // For state machine stuff.
 	HitStun = 3,
 	Fleeing = 4,
 	Attacking = 5,
-	Resting = 6
+	Resting = 6,
+	Dying = 7
 };
 
 // sprite info
@@ -40,5 +41,6 @@ h_speed = 0;
 walkSpeed = 4;
 grav = -0.75; // generic fall speed
 objectHealth = 0; // Everything should set this by default.
+invulnerable = false;
 
 tilemap = layer_tilemap_get_id("CollisionTiles"); // Here too.

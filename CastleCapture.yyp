@@ -47,6 +47,30 @@
             }
         },
         {
+            "Key": "0f7b5cee-f560-4902-ae59-b62ed8ccfc69",
+            "Value": {
+                "id": "188d26fa-51b4-490c-945b-bd596dcffae1",
+                "resourcePath": "scripts\\scr_PlayerCheckAttacks\\scr_PlayerCheckAttacks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "107fa10d-11cc-4cd5-87b5-ce2c8aa6bfff",
+            "Value": {
+                "id": "2aacd7e0-ac35-4d92-b07d-fecd8eb08774",
+                "resourcePath": "views\\107fa10d-11cc-4cd5-87b5-ce2c8aa6bfff.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "157cf83b-a716-4714-93b2-74fd04c77027",
+            "Value": {
+                "id": "e4372fdf-bd13-46b4-b44d-b79840556f12",
+                "resourcePath": "sprites\\spr_PlaceholderDestroy\\spr_PlaceholderDestroy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1770b231-426d-4234-a2d0-e3b94e7ae634",
             "Value": {
                 "id": "c3302944-628a-4e9b-b6e5-9b7b38bd3bf4",
@@ -84,6 +108,14 @@
                 "id": "f9baef72-e01e-4b07-b9c7-ddb8cfc1af32",
                 "resourcePath": "views\\386312bf-9cde-47db-a2f6-305e1523db61.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "42b7d1d0-86bb-4ad1-a4d6-9e945c3a05bb",
+            "Value": {
+                "id": "45bb4ad9-ba9c-4cdf-92c9-59f3430a3dee",
+                "resourcePath": "scripts\\scr_DamageEnemy\\scr_DamageEnemy.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -183,6 +215,14 @@
             }
         },
         {
+            "Key": "78eeed9c-1fa3-4826-8bf5-88875b3f1c4e",
+            "Value": {
+                "id": "d0519378-d3a8-4bfc-a7cf-e0df6a97a179",
+                "resourcePath": "objects\\obj_ThrowWeapon\\obj_ThrowWeapon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80791562-c500-4ffa-813f-70105f332b36",
             "Value": {
                 "id": "911930d0-70de-4d48-b0aa-62cfe38d9273",
@@ -207,6 +247,14 @@
             }
         },
         {
+            "Key": "9271db54-5944-4cc7-be78-daa2f29ac16e",
+            "Value": {
+                "id": "0cb9ddd3-3e74-4450-bbfc-8d77b68bec50",
+                "resourcePath": "scripts\\scr_CollideWithEnemy\\scr_CollideWithEnemy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "92d11dea-361f-46b0-a2af-1ec9832e27da",
             "Value": {
                 "id": "8a65edef-c85e-46bc-ad0e-a71412d6538d",
@@ -220,6 +268,14 @@
                 "id": "9b04142a-3bf3-4df4-ad99-62aca8e7869a",
                 "resourcePath": "views\\9c2c9fc6-fafc-424b-94d0-51742800b218.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9f37ed5a-3387-43ea-b6c3-82c692d56de9",
+            "Value": {
+                "id": "b5055f7b-83c1-4e8e-877d-2884016d08a5",
+                "resourcePath": "objects\\obj_Enemy\\obj_Enemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -239,6 +295,14 @@
             }
         },
         {
+            "Key": "c17d9068-4fed-4707-b98a-b15a7ebda4e2",
+            "Value": {
+                "id": "f0746e26-9186-4738-b5ea-8344ac3980e5",
+                "resourcePath": "views\\c17d9068-4fed-4707-b98a-b15a7ebda4e2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c3729963-d10c-4b99-ab78-05a818ea8477",
             "Value": {
                 "id": "af4b91eb-8cc1-4cf4-bd68-f31c3fb6d235",
@@ -252,6 +316,14 @@
                 "id": "5f65e47c-8335-4cd0-8832-c89c61bb5bc1",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "da2112a6-2b14-4433-a4f6-722fb08ee0e8",
+            "Value": {
+                "id": "9af011e9-8950-4d03-9297-9e7e5bbe3b7c",
+                "resourcePath": "scripts\\scr_PlayerThrowAttack\\scr_PlayerThrowAttack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -344,14 +416,18 @@
         }
     ],
     "script_order": [
-        "014341fc-60d2-4de6-99eb-a1487aa60a0f",
         "2673d368-3510-4a56-8886-8f3523224e62",
-        "49c12b03-9838-4a79-9755-92ff8b6de5dc",
-        "0374e604-e4ff-4d9b-80ed-548878da2f85",
-        "761f18f9-058d-4135-a5cd-4af3d67a429f",
         "e42ce15e-bc8f-4c1e-b41b-bc7aca4921f4",
         "6e65b70a-24e3-4cd5-9b73-4cedfc58fbce",
-        "5bdf0bc4-56e3-4300-9cb1-d67a278edb80"
+        "9271db54-5944-4cc7-be78-daa2f29ac16e",
+        "42b7d1d0-86bb-4ad1-a4d6-9e945c3a05bb",
+        "0f7b5cee-f560-4902-ae59-b62ed8ccfc69",
+        "da2112a6-2b14-4433-a4f6-722fb08ee0e8",
+        "5bdf0bc4-56e3-4300-9cb1-d67a278edb80",
+        "49c12b03-9838-4a79-9755-92ff8b6de5dc",
+        "014341fc-60d2-4de6-99eb-a1487aa60a0f",
+        "0374e604-e4ff-4d9b-80ed-548878da2f85",
+        "761f18f9-058d-4135-a5cd-4af3d67a429f"
     ],
     "tutorial": ""
 }

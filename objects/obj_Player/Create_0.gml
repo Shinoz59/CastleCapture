@@ -10,3 +10,5 @@ walkSpeed = 4;
 invulnerable = false;
 
 objectHealth = 100;
+
+attackCooldown = 0;
