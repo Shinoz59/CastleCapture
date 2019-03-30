@@ -9,6 +9,7 @@ if (player.facingDirection == facing_direction.Left){
 	projectile.x = player.bbox_left;
 	projectile.v_speed = 0;
 	projectile.h_speed = -1;
+	projectile.image_xscale = -1; // cheaty way to flip the sprite
 }
 else{
 	projectile.x = player.bbox_right;

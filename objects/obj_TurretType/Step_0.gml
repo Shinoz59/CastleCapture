@@ -1,6 +1,9 @@
 /// @description State machine type movement/actions.
 // You can write your code in this editor
 
+event_inherited(); // holds the alarms for pause
+
+if (!global.pause){
 	if (state != Object_State.Dying){
 		if (state != Object_State.HitStun){
 			if (cooldown <= 0){
@@ -25,3 +28,4 @@
 	else{
 		sprite_index = spr_PlaceholderDestroy;	
 	}
+}

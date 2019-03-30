@@ -3,27 +3,32 @@
 
 //if (is_controlling == true){ // for if the game's paused or something.
 	 // handle base movement.
-if (state != Object_State.Dying){
-		
-	if (state != Object_State.HitStun){
-		scr_ZombieMove(id);
-		if (scr_CollideWithPlayer(id) != noone){ // his body is a hitbox.
-			scr_DamagePlayer(id);
-		}
-	}
+	 
+event_inherited(); // holds the alarms for pause
 
-	if (state == Object_State.HitStun){ // get knocked around.
-		x += dx; // maybe move this?
-		y += dy; 
-	}
+if (!global.pause){
+	if (state != Object_State.Dying){
+		
+		if (state != Object_State.HitStun){
+			scr_ZombieMove(id);
+			if (scr_CollideWithPlayer(id) != noone){ // his body is a hitbox.
+				scr_DamagePlayer(id);
+			}
+		}
+
+		if (state == Object_State.HitStun){ // get knocked around.
+			x += dx; // maybe move this?
+			y += dy; 
+		}
 	
-	var collided = scr_TileCollission(id); // Should collide with tiles regardless of anything else going on.
-	if (collided == collision_side.Right) // Turn around if you hit a wall.
-		facingDirection = facing_direction.Left;
-	else if (collided == collision_side.Left)
-		facingDirection = facing_direction.Right
-}
-else{
-	sprite_index = spr_PlaceholderDestroy;
+		var collided = scr_TileCollission(id); // Should collide with tiles regardless of anything else going on.
+		if (collided == collision_side.Right) // Turn around if you hit a wall.
+			facingDirection = facing_direction.Left;
+		else if (collided == collision_side.Left)
+			facingDirection = facing_direction.Right
+	}
+	else{
+		sprite_index = spr_PlaceholderDestroy;
+	}
 }
 //}
