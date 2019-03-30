@@ -8,7 +8,8 @@
         "da2112a6-2b14-4433-a4f6-722fb08ee0e8",
         "5bdf0bc4-56e3-4300-9cb1-d67a278edb80",
         "49c12b03-9838-4a79-9755-92ff8b6de5dc",
-        "014341fc-60d2-4de6-99eb-a1487aa60a0f"
+        "014341fc-60d2-4de6-99eb-a1487aa60a0f",
+        "8da5a8b6-807f-496b-8fe7-b89bb2b0a34a"
     ],
     "filterType": "GMScript",
     "folderName": "playerScripts",

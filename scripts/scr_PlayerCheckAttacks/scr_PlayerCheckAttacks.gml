@@ -4,7 +4,7 @@ var player = argument0;
 
 if (attackCooldown == 0){
   // Thrown weapon, valid based on cooldown of thrown weapon.
-	if (keyboard_check(ord("E"))){
+	if (scr_InputCheck(InputButton.Throw)){
 		scr_PlayerThrowAttack(player);
 		attackCooldown = 30;
 	}

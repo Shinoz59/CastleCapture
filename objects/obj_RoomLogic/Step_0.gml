@@ -12,14 +12,14 @@ if (global.unpause){ // only want this set for one frame too.
 }
 
 if (global.pause){
-	if (keyboard_check_pressed(ord("P")) && pauseCooldown <= 0){
+	if (scr_InputCheck(InputButton.Pause) && pauseCooldown <= 0){
 		global.pause = false;
 		pauseCooldown = pauseCooldownMax;
 		global.unpause = true;
 	}
 }
 else{
-	if (keyboard_check_pressed(ord("P")) && pauseCooldown <= 0){
+	if (scr_InputCheck(InputButton.Pause) && pauseCooldown <= 0){
 		global.pause = true;
 		global.pausing = true;
 		pauseCooldown = pauseCooldownMax;
