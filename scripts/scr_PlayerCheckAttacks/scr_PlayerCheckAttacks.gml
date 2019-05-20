@@ -9,6 +9,9 @@ if (attackCooldown == 0){
 		attackCooldown = 30;
 	}
 
+	if (scr_InputCheck(InputButton.Capture)){
+		scr_PlayerStartCapture(id);
+	}
 }
 
 if (attackCooldown > 0)

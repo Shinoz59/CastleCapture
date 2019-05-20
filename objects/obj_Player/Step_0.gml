@@ -8,8 +8,13 @@ if (!global.pause){ // don't act while paused.
 		if (is_controlling == true){ // for if the game's paused or something.
 			 // handle base movement.
 			if (state != Object_State.Attacking && state != Object_State.HitStun){
-				scr_PlayerMove(id);
-				scr_PlayerCheckAttacks(id);
+				if (state == Object_State.Capturing){
+					scr_PlayerContinueCapture(id);
+				}
+				else{
+					scr_PlayerMove(id);
+					scr_PlayerCheckAttacks(id);
+				}
 			}
 			if (state == Object_State.Attacking){ // TODO - make attack options.
 				chargeTime += 1;

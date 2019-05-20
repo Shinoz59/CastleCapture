@@ -25,7 +25,8 @@ enum Object_State { // For state machine stuff.
 	Fleeing = 4,
 	Attacking = 5,
 	Resting = 6,
-	Dying = 7
+	Dying = 7,
+	Capturing = 8
 };
 
 // sprite info

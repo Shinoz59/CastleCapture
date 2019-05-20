@@ -20,6 +20,7 @@ if (enemy.invulnerable != true){
 		enemy.dx = obj.knockback / 3;
 
 	enemy.objectHealth -= obj.damage;
+	enemy.stunCounter += 1; // maybe replace with stun damage or something.
 	// Check to see if enemy is dead.
 	if (enemy.objectHealth <= 0){
 		enemy.state = Object_State.Dying;

@@ -10,7 +10,8 @@ enum InputButton{
 	Pause = 7,
 	QuickSwitch = 8,
 	SwitchMenu = 9,
-	Power = 10 // Add more as things come up.
+	Power = 10,
+	Capture = 11// Add more as things come up.
 };
 
 var inputToCheck = argument0;
@@ -42,6 +43,10 @@ switch(inputToCheck){ // I'd want to change these input checks with like, the gl
 		break;
 	case InputButton.Pause:
 		if (keyboard_check_pressed(vk_escape)) // don't want it triggering repeatedly.
+			return true;
+		break;
+	case InputButton.Capture:
+		if (keyboard_check(vk_shift)) // we want holding shift, not press/unpress.
 			return true;
 		break;
 }

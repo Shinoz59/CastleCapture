@@ -19,6 +19,10 @@ if (!global.pause){
 		if (state == Object_State.HitStun){ // get knocked around.
 			x += dx; // maybe move this?
 			y += dy; 
+			if (abs(dx) > 0.5)
+				dx *= 0.9;
+			else
+				dx = 0;
 		}
 	
 		var collided = scr_TileCollission(id); // Should collide with tiles regardless of anything else going on.

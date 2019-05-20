@@ -7,3 +7,5 @@ event_inherited();
 
 knockback = 3;
 damage = 15;
+stunThreshold = 5;
+stunCounter = 0;

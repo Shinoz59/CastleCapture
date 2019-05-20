@@ -8,4 +8,4 @@ walkSpeed = 2;
 
 knockback = 3;
 damage = 15;
-objectHealth = 20;
+objectHealth = 40;
